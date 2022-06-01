@@ -1,0 +1,333 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(235, 235, 235, 0.5);
+}
+
+/* 公共样式 */
+.red {
+    color: #cf4444;
+}
+
+.pannel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 11px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+i {
+    font-style: normal;
+}
+
+/* 主体内容 */
+
+/* 用户地址等信息 */
+.main {
+    /* 下内边距防止被底部支付栏盖住 */
+    padding: 12px 11px 80px;
+}
+
+.icon-location {
+    font-size: 17px;
+    color: white;
+}
+
+.location {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-image: linear-gradient(90deg,
+            #6fc2aa 5%,
+            #54b196 100%);
+    border-radius: 50%;
+}
+
+.more {
+    display: block;
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.msg {
+    flex: 1;
+    padding-left: 10px ;
+}
+
+.usr i:nth-child(1) {
+    font-size: 15px;
+}
+
+.usr i:nth-child(2) {
+    font-size: 14px;
+}
+
+.address {
+    margin-top: 5px;
+}
+
+.address span {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #333333;
+}
+
+/* 用户地址等信息 */
+/* 商品信息 */
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.goods_img {
+    width: 85px;
+    height: 85px;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.goods_msg {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.goods_msg span[type="msg"] {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 19px;
+    letter-spacing: 0px;
+    color: #262626;
+
+    /* 显示两行后隐藏 */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    /* 正常显示空白符 是什么就是什么 */
+    white-space: pre-wrap;
+}
+.marks{
+    position: relative;
+    width: 100%;
+    height:11px;
+    margin:10px 0 13px 0;
+}
+.marks_son{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0 2px;
+    background-color:#f7f7f8;
+    font-family: PingFangSC-Regular;
+	font-size: 11px;
+	letter-spacing: 0px;
+	color: #888888;
+}
+.marks_son span{
+    /* 显示一行后隐藏 */
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.num {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+}
+
+.num span {
+    font-family: ArialMT;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #262626;
+}
+.price span{
+    vertical-align: middle;
+    margin-right: 10px;
+	font-family: ArialMT;
+	font-size: 9px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+}
+.price span>i{
+    font-size:16px;
+}
+.price del{
+    vertical-align: middle;
+    font-family: ArialMT;
+	font-size: 5px;
+	font-weight: bold;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+	color: #999999;
+}
+
+.price del i{
+	font-size: 12px;
+}
+/* 商品信息 */
+
+/* 配送信息 */
+.send_message{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.send{
+    width:100%;
+    margin-bottom:20px;
+}
+.send span{
+    font-family: PingFangSC-Regular;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+	color: #262626;
+}
+.send span:last-child{
+    float: right;
+}
+#usr_message{
+    float:none;
+    margin-left:20px ;
+	font-size: 12px;
+	line-height: 21px;
+	color: #989898;
+    text-indent: 2em;
+}
+.send_message .send:nth-child(3){
+    margin-bottom: 0;
+}
+
+.send .icon-more,#payment{
+    vertical-align:bottom;
+}
+.send .icon-more:before {
+    content: "\e600";
+    position: relative;
+    top: 1px;
+}
+
+.send .icon-more{
+    margin-left:5px;
+    color: #808080;
+}
+.send a{
+    float:right;
+    text-decoration:none;
+
+}
+/* 配送信息 */
+
+/* 商品价格 */
+.price_msg{
+    flex-wrap: wrap;
+}
+.price_msg .price{
+    width: 100%;
+}
+.price_msg .price span:last-child{
+    float: right;
+}
+.price_msg .price span{
+    font-family: PingFangSC-Regular;
+    margin-right: 0;
+	font-size: 13px;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 21px;
+	letter-spacing: 0px;
+	color: #262626;
+}
+.price_msg .price{
+    margin-bottom: 20px;
+}
+.price_msg .price:nth-child(3){
+    margin-bottom: 0;
+}
+.price_msg .price .red{
+    color: #cf4444;
+}
+/* 商品价格 */
+
+/* 主体内容 */
+
+
+
+
+
+
+
+/* 底部支付 */
+.pay {
+    /* 脱标 */
+    position: fixed;
+    /* 弹性布局 */
+    display: flex;
+    /* 左右间距 */
+    padding: 0 11px;
+    /* 主轴对齐方式 */
+    justify-content: space-between;
+    /* 侧轴对齐方式 */
+    align-items: center;
+
+
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 2px 2px rgba(204, 204, 204, 0.678);
+}
+
+.pay .left {
+    font-size: 12px;
+}
+
+.pay .left i {
+    font-size: 20px;
+    font-family: Arial;
+    font-stretch: normal;
+}
+
+.right {
+    width: 90px;
+    height: 35px;
+    background-image: linear-gradient(90deg, #6fc2aa 5%, #54b196 100%);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+.right a {
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
+
+/* 底部支付 */
